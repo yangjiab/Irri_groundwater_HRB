@@ -1,0 +1,122 @@
+# modeling parameters
+predict_tar: "WaterBarr"
+predict_year: 2020
+
+# color scheme for plots
+bar_color:
+  - "#faa263"
+  - "#f4e9c0"
+  - "#c9e9e6"
+  - "#34978e"
+  - "#003d2f"
+
+colors:
+  - "#faa263"
+  - "#f4e9c0"
+  - "#c9e9e6"
+  - "#34978e"
+  - "#003d2f"
+
+# parameters for model training
+features:
+  - "WB_lag1"
+  - "WB_lag2"
+  - "DEM"
+  - "log_k4"
+  - "log_k3"
+  - "log_k2"
+  - "log_k1"
+  - "prec"
+  - "pet"
+  - "tmpmean"
+  - "Irr"
+  - "Irr_cum2"
+  - "Irr_cum3"
+
+
+features_fallow10:
+  - "WB_lag1"
+  - "WB_lag2"
+  - "DEM"  
+  - "log_k4"
+  - "log_k3"
+  - "log_k2"
+  - "log_k1"
+  - "prec"
+  - "pet"
+  - "tmpmean"
+  - "Irr10"
+  - "TWD10"
+  - "Irr10_cum2"
+  - "TWD10_cum2"
+  - "Irr10_cum3"
+
+features_fallow20:
+  - "WB_lag1"
+  - "WB_lag2"
+  - "DEM"
+  - "log_k4"
+  - "log_k3"
+  - "log_k2"
+  - "log_k1"
+  - "prec"
+  - "pet"
+  - "tmpmean"
+  - "Irr20"
+  - "TWD20"
+  - "Irr20_cum2"
+  - "TWD20_cum2"
+  - "Irr20_cum3"
+
+features_fallow30:
+  - "WB_lag1"
+  - "WB_lag2"
+  - "DEM"
+  - "log_k4"
+  - "log_k3"
+  - "log_k2"
+  - "log_k1"
+  - "prec"
+  - "pet"
+  - "tmpmean"
+  - "Irr30"
+  - "TWD30"
+  - "Irr30_cum2"
+  - "TWD30_cum2"
+  - "Irr30_cum3"
+
+# lag
+lag_factor:
+  - "WB_lag1"
+  - "WB_lag2"
+
+# acc
+acc_factor:
+  - "Irr"
+  - "TWD"
+  - "Irr10"
+  - "TWD10"
+  - "Irr20"
+  - "TWD20"
+  - "Irr30"
+  - "TWD30"
+
+total_factor:
+  - "DEM"
+  - "log_k4"
+  - "log_k3"
+  - "log_k2"
+  - "log_k1"
+  - "WB_lag1"
+  - "WB_lag2"
+  - "prec"
+  - "pet"
+  - "tmpmean"
+  - "Irr_cum2"
+  - "Irr_cum3"
+  - "Irr10_cum2"
+  - "Irr20_cum2"
+  - "Irr30_cum2"
+  - "Irr10_cum3"
+  - "Irr20_cum3"
+  - "Irr30_cum3"
